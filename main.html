@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron Video Converter App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body{
+            background: url("Lede_still.jpg");
+            background-size: cover;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br/>
+        <h1 style="text-align: center;">Video Converter App</h1>
+
+        <div id="project">
+            <br/>
+            <br/>
+            <button class="btn btn-block btn-danger"  id ="dirs" onclick="showForm()">Create New Project</button>
+        </div>
+
+
+        <div id="videoForm" style="display: none;">
+        <div class="form-group">
+            <label for="format">Choose .Mp4 file</label>
+        </div>
+        <label htmlFor="filePicker">
+            Select file to convert
+            </label>
+        <input  class="btn btn-block btn-success" id="upload" type="file" accept="video/*">
+        <!-- Select file to convert -->
+        <!-- <button  type="file" accept="video/*">
+            
+        </button> -->
+    </input>
+        <div id="info"></div>
+    </div>
+</body>
+<script src="render.js"></script>
+</html>
